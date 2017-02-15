@@ -15,6 +15,7 @@ open browser with http://localhost:3000
 ```
 
 #### Flow of architecture
-https://raw.githubusercontent.com/react-boilerplate/react-boilerplate/master/docs/general/workflow.png
+![alt text](https://raw.githubusercontent.com/react-boilerplate/react-boilerplate/master/docs/general/workflow.png "Flow of architecture")
+
 (source: [react-boilerplate](https://github.com/react-boilerplate/react-boilerplate))
 
