@@ -3,5 +3,6 @@ A frontend architecture sample written in react and cool stuffs around it such a
 (The structure inpired by awesome [react-boilerplate](https://github.com/react-boilerplate/react-boilerplate) project)
 
 #### TODOs:
-- [ ] Server rendering
-- [ ] Serve static assets from server side
+- [ ] Server side rendering
+- [ ] Serving static assets from server side
+- [ ] Styling with Redium
