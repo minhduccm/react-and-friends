@@ -1,5 +1,5 @@
 # react-and-friends
-A frontend architecture sample written in react and cool stuffs around it such as material-ui, redux, react-router, redux-saga, reselect, and more...
+A frontend architecture sample written in react and cool stuffs around it such as material-ui, redux, react-router, redux-saga, reselect, webpack and more...
 
 (The structure followed & inpired by awesome [react-boilerplate](https://github.com/react-boilerplate/react-boilerplate) project)
 
