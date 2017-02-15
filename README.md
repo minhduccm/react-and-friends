@@ -7,6 +7,7 @@ A frontend architecture sample written in react and cool stuffs around it such a
 - [ ] Server side rendering
 - [ ] Serving static assets from server side
 - [ ] Styling with Redium
+- [ ] Using [flowtype](https://flowtype.org/) for javascript static type checker
 
 
 #### Up and run
