@@ -69,7 +69,6 @@ export function reposListLoadingError(error) {
  * @return {object} An action object with a type of SELECT_REPO
  */
 export function selectRepo(selectedRepo) {
-  console.log('selectedRepo action');
   return {
     type: SELECT_REPO,
     selectedRepo,

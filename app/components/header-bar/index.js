@@ -18,7 +18,7 @@ export default class HeaderBar extends React.Component { // eslint-disable-line 
   render() {
     return (
       <Toolbar>
-        <ToolbarGroup firstChild={true}>
+        <ToolbarGroup firstChild>
           <IconButton
             iconStyle={styles.mediumIcon}
             style={styles.medium}
@@ -28,7 +28,7 @@ export default class HeaderBar extends React.Component { // eslint-disable-line 
             </Link>
           </IconButton>
         </ToolbarGroup>
-        <ToolbarGroup lastChild={true}>
+        <ToolbarGroup lastChild>
           <Link to="/">
             <FlatButton label="Home" />
           </Link>
@@ -37,7 +37,7 @@ export default class HeaderBar extends React.Component { // eslint-disable-line 
           </Link>
           <IconMenu
             iconButtonElement={
-              <IconButton touch={true}>
+              <IconButton touch>
                 <NavigationExpandMoreIcon />
               </IconButton>
             }

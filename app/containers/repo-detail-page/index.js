@@ -27,17 +27,11 @@ export class RepoDetailPage extends React.Component { // eslint-disable-line rea
 
 RepoDetailPage.propTypes = {
   selectedRepo: React.PropTypes.object,
+  params: React.PropTypes.object,
 };
 
-export function mapDispatchToProps(dispatch) {
-  return {
-    // onLoadReposList: () => {
-    //   dispatch(loadReposList());
-    // },
-    // onSelectRepo: (selectedRepo) => {
-    //   dispatch(selectRepo(selectedRepo));
-    // },
-  };
+export function mapDispatchToProps() {
+  return {};
 }
 
 const mapStateToProps = createStructuredSelector({

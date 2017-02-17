@@ -20,9 +20,9 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
           avatar="https://avatars2.githubusercontent.com/u/6848620?v=3&u=69c28a54e624ce2cae9d88396ba2ab3e3a6c450c&s=400"
         />
         <CardMedia
-          overlay={<CardTitle title="Keep it simple & make it easy" subtitle="Ok, let's do it!" />}
+          overlay={<CardTitle title="Keep it simple & make it happen" subtitle="Ok, let's do it!" />}
         >
-          <img src="http://www.material-ui.com/images/nature-600-337.jpg" />
+          <img src="http://www.material-ui.com/images/nature-600-337.jpg" role="presentation" />
         </CardMedia>
       </Card>
     );
@@ -31,7 +31,7 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
 
 HomePage.propTypes = {};
 
-export function mapDispatchToProps(dispatch) {
+export function mapDispatchToProps() {
   return {};
 }
 

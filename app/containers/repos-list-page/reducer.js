@@ -39,7 +39,6 @@ function reposListReducer(state = initialState, action) {
         .setIn(['userData', 'repositories'], false);
 
     case LOAD_REPOS_LIST_SUCCESS:
-      console.log('LOAD_REPOS_LIST_SUCCESS func; ', action);
       return state
         .setIn(['userData', 'repositories'], action.repos)
         .set('loading', false)
@@ -51,8 +50,6 @@ function reposListReducer(state = initialState, action) {
         .set('loading', false);
 
     case SELECT_REPO:
-      const userData = state.get('userData').toJS();
-      console.log('SELECT_REPO: ', userData);
       return state
         .set('selectedRepo', action.selectedRepo);
 
