@@ -5,9 +5,6 @@
  */
 
 import React from 'react';
-import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
-
 import { Card, CardHeader, CardMedia, CardTitle } from 'material-ui/Card';
 
 export class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
@@ -29,13 +26,4 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
   }
 }
 
-HomePage.propTypes = {};
-
-export function mapDispatchToProps() {
-  return {};
-}
-
-const mapStateToProps = createStructuredSelector({});
-
-// Wrap the component to inject dispatch and state into it
-export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
+export default HomePage;

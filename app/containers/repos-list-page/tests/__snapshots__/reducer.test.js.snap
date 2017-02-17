@@ -1,0 +1,11 @@
+exports[`reposListReducer returns the initial state 1`] = `
+Object {
+  "currentUser": false,
+  "error": false,
+  "loading": false,
+  "selectedRepo": false,
+  "userData": Object {
+    "repositories": false,
+  },
+}
+`;
