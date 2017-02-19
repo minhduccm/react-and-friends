@@ -18,7 +18,7 @@ export class ReposListPage extends React.Component { // eslint-disable-line reac
     this.props.onLoadReposList();
   }
 
-  selectRepo(rowNumber) {
+  selectRepo = (rowNumber) => { // using arrow function here to keep the right `this` instead of normal function
     const selectedRepo = this.props.repos[rowNumber];
     this.props.onSelectRepo(selectedRepo);
     this.props.router.push(`/repos/${selectedRepo.id}`);
@@ -27,7 +27,7 @@ export class ReposListPage extends React.Component { // eslint-disable-line reac
   render() {
     const { repos } = this.props;
     return (
-      <Table onCellClick={(rowNumber) => this.selectRepo(rowNumber)}>
+      <Table onCellClick={this.selectRepo}>
         <TableHeader>
           <TableRow>
             <TableHeaderColumn>ID</TableHeaderColumn>
