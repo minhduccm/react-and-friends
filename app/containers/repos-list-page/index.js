@@ -19,6 +19,7 @@ export class ReposListPage extends React.Component { // eslint-disable-line reac
   }
 
   selectRepo = (rowNumber) => { // using arrow function here to keep the right `this` instead of normal function
+    console.log('--------- vao day --------------');
     const selectedRepo = this.props.repos[rowNumber];
     this.props.onSelectRepo(selectedRepo);
     this.props.router.push(`/repos/${selectedRepo.id}`);

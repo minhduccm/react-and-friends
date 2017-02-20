@@ -3,7 +3,6 @@
  */
 
 import React from 'react';
-// import { shallow, mount } from 'enzyme';
 import { shallowWithMuiContext, mountWithMuiContext } from 'utils/enzyme-test-with-mui';
 import { HomePage } from '../index';
 

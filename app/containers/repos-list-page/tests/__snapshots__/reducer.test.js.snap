@@ -1,3 +1,63 @@
+exports[`reposListReducer handles loadReposList action 1`] = `
+Object {
+  "currentUser": false,
+  "error": false,
+  "loading": true,
+  "selectedRepo": false,
+  "userData": Object {
+    "repositories": false,
+  },
+}
+`;
+
+exports[`reposListReducer handles reposListLoaded action 1`] = `
+Object {
+  "currentUser": "minhduccm",
+  "error": false,
+  "loading": false,
+  "selectedRepo": false,
+  "userData": Object {
+    "repositories": Array [
+      Object {
+        "id": "999xxx",
+        "name": "react-and-friends",
+      },
+      Object {
+        "id": "888yyy",
+        "name": "flashcard",
+      },
+    ],
+  },
+}
+`;
+
+exports[`reposListReducer handles reposListLoadingError action 1`] = `
+Object {
+  "currentUser": false,
+  "error": "Something went wrong!!!",
+  "loading": false,
+  "selectedRepo": false,
+  "userData": Object {
+    "repositories": false,
+  },
+}
+`;
+
+exports[`reposListReducer handles selectRepo action 1`] = `
+Object {
+  "currentUser": false,
+  "error": false,
+  "loading": false,
+  "selectedRepo": Object {
+    "id": "777xyz",
+    "name": "awesome react app",
+  },
+  "userData": Object {
+    "repositories": false,
+  },
+}
+`;
+
 exports[`reposListReducer returns the initial state 1`] = `
 Object {
   "currentUser": false,

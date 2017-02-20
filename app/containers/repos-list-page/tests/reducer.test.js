@@ -2,27 +2,46 @@
  * Repos list page reducer
  */
 
-// import { fromJS } from 'immutable';
 import reposListReducer from '../reducer';
-
-
-// const initialState = fromJS({
-//   loading: false,
-//   error: false,
-//   currentUser: false,
-//   userData: {
-//     repositories: false,
-//   },
-//   selectedRepo: false,
-// });
+import { loadReposList, reposListLoaded, reposListLoadingError, selectRepo } from '../actions';
 
 describe('reposListReducer', () => {
+  const initialState = reposListReducer(undefined, {});
+
   it('returns the initial state', () => {
-    // expect(reposListReducer(undefined, {})).toEqual(initialState);
-    expect(reposListReducer(undefined, {})).toMatchSnapshot();
+    expect(initialState).toMatchSnapshot();
   });
 
-  it('handles the toggleNav action', () => {
+  it('handles loadReposList action', () => {
+    expect(reposListReducer(initialState, loadReposList()))
+      .toMatchSnapshot();
+  });
 
+  it('handles reposListLoaded action', () => {
+    const repos = [{
+      id: '999xxx',
+      name: 'react-and-friends',
+    }, {
+      id: '888yyy',
+      name: 'flashcard',
+    }];
+    const username = 'minhduccm';
+    expect(reposListReducer(initialState, reposListLoaded(repos, username)))
+      .toMatchSnapshot();
+  });
+
+  it('handles reposListLoadingError action', () => {
+    const error = 'Something went wrong!!!';
+    expect(reposListReducer(initialState, reposListLoadingError(error)))
+      .toMatchSnapshot();
+  });
+
+  it('handles selectRepo action', () => {
+    const selectedRepo = {
+      id: '777xyz',
+      name: 'awesome react app',
+    };
+    expect(reposListReducer(initialState, selectRepo(selectedRepo)))
+      .toMatchSnapshot();
   });
 });
